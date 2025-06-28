@@ -317,24 +317,41 @@
             //    i++;
             //}
             //Console.WriteLine($"Rastgele üretilen sayıların toplamı: {sum}");
+            //Random rnd = new Random();
+            //int i = 1;
+            //int adet = 0;
+            //int toplam = 0; 
+            //while (i <= 10)
+            //{
+            //   int sayi = rnd.Next(1, 11);
+            //    if (sayi%2==1)
+            //    {
+            //        Console.WriteLine(sayi);
+            //        toplam += sayi;
+            //        adet++;
+            //    }
+            //    i++;
+            //}
+            //Console.WriteLine($"Rastgele üretilen tek sayıların toplamı: {toplam}");
+            //Console.WriteLine($"Rastgele üretilen tek sayıların adedi: {adet}");
+            //Console.ReadLine();
+
             Random rnd = new Random();
             int i = 1;
             int adet = 0;
-            int toplam = 0; 
             while (i <= 10)
             {
-               int sayi = rnd.Next(1, 11);
-                if (sayi%2==1)
+                int sayi = rnd.Next(1, 11);
+                if (sayi==5)
                 {
-                    Console.WriteLine(sayi);
-                    toplam += sayi;
                     adet++;
                 }
-                i++;
+                
             }
-            Console.WriteLine($"Rastgele üretilen tek sayıların toplamı: {toplam}");
-            Console.WriteLine($"Rastgele üretilen tek sayıların adedi: {adet}");
-            Console.ReadLine();
+            if (adet == 3)
+            {
+                Console.WriteLine("5 sayisi 3 kez geldi.");
+            }
         }
     }
 }
